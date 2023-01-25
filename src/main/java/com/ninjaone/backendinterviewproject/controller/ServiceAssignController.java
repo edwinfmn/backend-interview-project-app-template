@@ -72,10 +72,9 @@ public class ServiceAssignController {
         /*Validation - Check if Service Assign to right Device Type*/
         String deviceSystemName = deviceService.getDeviceById(serviceAssign.getDevice().getId()).get().getSystemName();
         String serviceType = servService.getServiceById(serviceAssign.getService().getId()).get().getType();
-        if( !serviceType.equals("ANY") )
-            if ( !deviceSystemName.equals(serviceType) )
-                return new ResponseObject<>(HttpStatus.BAD_REQUEST, "ERROR - Service Type " + serviceType +
-                        " can't be assigned to Device of Type " + deviceSystemName, null);
+        if( !serviceType.equals("ANY") && !deviceSystemName.equals(serviceType) )
+            return new ResponseObject<>(HttpStatus.BAD_REQUEST, "ERROR - Service Type " + serviceType +
+                    " can't be assigned to Device of Type " + deviceSystemName, null);
 
         if(valid)
             return new ResponseObject<>(HttpStatus.CREATED, "Service assignment created successfully", serviceAssignService.saveServiceByDevice(serviceAssign));

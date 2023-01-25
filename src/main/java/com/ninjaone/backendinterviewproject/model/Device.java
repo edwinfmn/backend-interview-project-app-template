@@ -38,10 +38,7 @@ public class Device {
         if(this.id.equals(((Device)o).getId()))
             return true;
 
-        if(this.systemName.trim().equalsIgnoreCase(((Device)o).getSystemName().trim())
-          && this.type.trim().equalsIgnoreCase(((Device)o).getType().trim()))
-            return true;
-        else
-            return false;
+        return this.systemName.trim().equalsIgnoreCase(((Device) o).getSystemName().trim())
+                && this.type.trim().equalsIgnoreCase(((Device) o).getType().trim());
     }
 }

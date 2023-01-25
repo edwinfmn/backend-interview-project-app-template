@@ -44,10 +44,7 @@ public class Serv {
         if( this.id.equals(((Serv) o).getId()) )
             return true;
 
-        if( this.serviceName.trim().equalsIgnoreCase(((Serv)o).getServiceName().trim())
-            && this.type.trim().equalsIgnoreCase(((Serv)o).getType().trim()) )
-            return true;
-        else
-            return false;
+        return this.serviceName.trim().equalsIgnoreCase(((Serv) o).getServiceName().trim())
+                && this.type.trim().equalsIgnoreCase(((Serv) o).getType().trim());
     }
 }

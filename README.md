@@ -68,7 +68,9 @@ As requested, the result of calculating total costs can be found in the followin
 
 Run the command `gradle test` command on the project root folder, after *SUCCESSFULL* ending you can find the test results in build - reports folder.
 
-You can access here to [**Test Result Report**](build/reports/tests/test/index.html)
+To access Test Result Report open **index.html** file located on *build/reports/tests/test/* folder.
+
+Also, there is a Postman collection that can be used, it's located at [Postman Collection](src/test/resources/BackendInterviewProject.postman_collection.json).
 
 ## H2 Console 
 
