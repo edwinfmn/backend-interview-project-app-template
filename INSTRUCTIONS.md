@@ -50,11 +50,11 @@ Devices have the following properties:
     &nbsp;&nbsp;Backup: $9  
     &nbsp;&nbsp;Screen Share: $4 
 - Implement a rudimentary cache for the calculation per device. Note that the cache must
-be re-evaluated any time a service is added to a Device.
+be re-evaluated any time a serv is added to a Device.
 
 ## Instructions
 
-Using the provided [Project Template](https://github.com/NinjaRMM/backend-interview-project-app-template) or from scratch, implement the service as described in *Feature
+Using the provided [Project Template](https://github.com/NinjaRMM/backend-interview-project-app-template) or from scratch, implement the serv as described in *Feature
 Requirements*
 
 ## Project Template
@@ -66,10 +66,10 @@ The template provides the following items already pre- configured and ready to c
  
 ## Items to Focus On
 
-In addition to fulfilling the requirements of the service, special attention should be made to:
+In addition to fulfilling the requirements of the serv, special attention should be made to:
 - Providing a flexible data model so that new Services can be added, or their cost changed in the
 future.
-- Efficient and correct calculation of service costs. 
+- Efficient and correct calculation of serv costs. 
 - For the sake of simplicity and respect to your time, do the simplest possible solution and write
 down what you would do if you had unlimited time to work on the solution. We will discuss
 these in the subsequent call to completing this assessment.

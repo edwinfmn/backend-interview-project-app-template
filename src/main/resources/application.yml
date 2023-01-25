@@ -14,3 +14,9 @@ spring:
         enabled: true
         settings:
           web-allow-others: false
+    mvc:
+      pathmatch:
+        matching-strategy: ANT_PATH_MATCHER
+
+service:
+  default-device-name: 'Device'
